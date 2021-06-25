@@ -1,11 +1,15 @@
 import Message from './Message'
 import PropTypes from 'prop-types'
 
-const Messages = ({messages}) => {
+const Messages = ({ messages }) => {
     return (
-        <div className="row messages">
+        <div className='row messages'>
             {messages.map(message => (
-                <Message key={message.id} text={message.text} username={message.username} />
+                <Message
+                    key={message.id}
+                    text={message.text}
+                    username={message.username}
+                />
             ))}
         </div>
     )
